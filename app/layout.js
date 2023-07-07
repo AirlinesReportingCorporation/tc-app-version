@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={main} style={{backgroundColor:"#000"}}>
+      <body className={main}>
         <div className="tc2021-main tc2021-main-v">
           <NavBar />
           {children}

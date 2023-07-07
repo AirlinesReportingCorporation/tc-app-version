@@ -4,7 +4,7 @@ import "./page.module.css"
 
 export default function Home() {
   return (
-    <main className={main}>
+    <main className={main} style={{backgroundColor:"#000"}}>
       <div style={{ width: "100%" }}>
         <div className="tc2021-header-container">
           <div className="container" style={{ borderTop: "none" }}>
