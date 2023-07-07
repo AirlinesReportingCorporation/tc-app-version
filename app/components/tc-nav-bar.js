@@ -1,5 +1,7 @@
 import Link from "next/link";
-import navbar from "./scss/navbar.module.scss";
+import Image from "next/image";
+
+import "./navbar.scss";
 
 export default function NavBar() {
   return (
@@ -9,40 +11,43 @@ export default function NavBar() {
             <div className="col-md-12">
               <div className="tc2021-nav d-lg-flex d-md-flex flex-row align-items-center">
                 <Link className="tc2021-underline d-block" href="/">
-                  <img
+                  <Image
+                    width={225}
+                    height={0}
                     className="tc2021-logo"
                     src="https://arctravelconnect.com/globalassets/Home2/2021/TCVS-LOGO.svg"
                     alt="Travel Connect Virtual Series"
+                    style={{height: "auto"}}
                   />
                 </Link>
-                <Link href="/episodes">Episodes</Link>
-                <Link href="/episodes?filter=data-and-trends">
+                <Link className="tc-nav-link" href="/episodes">Episodes</Link>
+                <Link className="tc-nav-link" href="/episodes?filter=data-and-trends">
                   Data & Trends
                 </Link>
-                <Link href="/episodes?filter=retailing">Retailing</Link>
-                <Link href="/episodes?filter=innovation">Innovation</Link>
+                <Link className="tc-nav-link" href="/episodes?filter=retailing">Retailing</Link>
+                <Link className="tc-nav-link" href="/episodes?filter=innovation">Innovation</Link>
                 <div className="arc-logo ml-lg-auto ml-md-auto d-sm-block">
                   <div className="d-flex justify-content-center">
-                    <a
+                    <Link
                       target="_blank"
                       className="tc2021-underline con-social icon-facebook"
                       href="https://www.facebook.com/ARCtalk"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link
                       target="_blank"
                       className="tc2021-underline icon-social icon-twitter"
                       href="https://twitter.com/ARCtalk"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link
                       target="_blank"
                       className="tc2021-underline icon-social icon-linkedin"
                       href="https://www.linkedin.com/company/6509/"
-                    ></a>
-                    <a
+                    ></Link>
+                    <Link
                       target="_blank"
                       className="tc2021-underline icon-social icon-youtube"
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw/"
-                    ></a>
+                    ></Link>
                   </div>
                 </div>
               </div>

@@ -9,4 +9,8 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  webpack(config) { //This is for debugging info
+    config.infrastructureLogging = { debug: /PackFileCache/ }
+    return config;
+  }
 };

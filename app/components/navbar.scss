@@ -1,0 +1,96 @@
+.tc2021-main {
+  .container {
+    max-width: 1400px;
+  }
+  .tc2021-header-container {
+    .container {
+      border-top: 1px solid #808080;
+    }
+  }
+}
+
+.tc2021-nav {
+  max-width: 1400px;
+  margin: 2rem auto;
+  border-bottom: 1px solid #000000;
+}
+
+.tc2021-nav .arc-logo a {
+  background: #fff;
+  color: #2a2b2c !important;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.tc2021-nav .arc-logo a:before {
+  margin-left: 3px;
+}
+
+// Current listed icons
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}
+.icon-youtube:before {
+  content: "";
+}
+
+.tc2021-nav a.tc-nav-link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.tc2021-nav a:hover {
+  color: #fff;
+}
+.tc2021-nav a.tc-nav-link:hover:after {
+  position: absolute;
+  height: 4px;
+  content: "";
+  background: #ffa619;
+  top: 120%;
+  width: 100%;
+  left: 0;
+}
+
+.tc2021-header-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tc2021-assistance-1,
+.tc2021-assistance-2,
+.tc2021-virtual-inner {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 990.99px) {
+  .tc2021-main-v .tc2021-virtual-inner {
+    max-width: 100%;
+    padding: 15px;
+
+    img {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+}
