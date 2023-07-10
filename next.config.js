@@ -12,5 +12,13 @@ module.exports = {
   webpack(config) { //This is for debugging info
     config.infrastructureLogging = { debug: /PackFileCache/ }
     return config;
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'arctravelconnect.com',
+      },
+    ],
+  },
 };

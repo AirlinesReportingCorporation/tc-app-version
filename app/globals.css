@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,4 +16,36 @@ body h6,
 .jumbotron--image .block-header {
   font-family: "Source Sans Pro", arial, sans-serif !important;
   font-weight: 300;
+}
+
+.tc2021-header-container {
+  padding: 0px 0px 240px;
+  .container {
+    border-top: 1px solid #808080;
+  }
+}
+
+.tc22-episode-box {
+  background: #000;
+  border: 1px solid #1fdcc8;
+  border-top: 20px solid #1fdcc8;
+  padding: 30px;
+  margin: 30px;
+  text-align: left;
+}
+
+.usa-embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.usa-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

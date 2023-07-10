@@ -1,13 +1,4 @@
-.tc2021-main {
-  .container {
-    max-width: 1400px;
-  }
-  .tc2021-header-container {
-    .container {
-      border-top: 1px solid #808080;
-    }
-  }
-}
+
 
 .tc2021-main-v .tc2021-header {
   background: #000;
@@ -50,6 +41,9 @@
   content: "";
 }
 
+.tc2021-nav a {
+  padding: 10px;
+ }
 .tc2021-nav a.tc-nav-link {
   position: relative;
   display: inline-block;
@@ -57,7 +51,6 @@
   font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 1rem;
-  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -74,11 +67,8 @@
   top: 120%;
   width: 100%;
   left: 0;
-}
-
-.tc2021-header-container {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tc2021-assistance-1,

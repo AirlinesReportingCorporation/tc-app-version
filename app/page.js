@@ -1,34 +1,56 @@
 import Image from "next/image";
-import main from './scss/main.module.scss';
-import "./page.module.css"
+import Link from "next/link";
+import main from "./scss/main.module.scss";
+import Iframe from "react-iframe";
+import "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={main} style={{backgroundColor:"#000"}}>
+    <main className={main} style={{ backgroundColor: "#000" }}>
       <div style={{ width: "100%" }}>
-        <div className="tc2021-header-container">
+        <div
+          className="tc2021-header-container"
+          style={main.tc2021HeaderContainer}
+        >
           <div className="container" style={{ borderTop: "none" }}>
             <div className="row">
-              <a
+              <Link
                 target="_blank"
                 href="https://atpcodigital.co1.qualtrics.com/jfe/form/SV_cLQ4SgQDZfRd21E?utm_source=homepage-card"
               >
-                <img
+                <Image
+                  width={1370} //Work on this to make it responsive
+                  height={0}
+                  style={{
+                    maxWidth: "100%",
+                    width: "100%",
+                    height: "auto",
+                    display: "inline-block",
+                    margin: "auto",
+                  }}
                   className="pb-3"
                   src="https://arctravelconnect.com/globalassets/Home2/TC-Website-Ad.png"
                   alt="ARC TravelConnect"
                 />
-              </a>
+              </Link>
             </div>
             <div className="row">
               <div className="col-md-12">
                 <div className="tc2021-header-image">
-                  <a href="/episodes">
-                    <img
+                  <Link href="/episodes">
+                    <Image
+                      width={600}
+                      height={0}
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                        display: "inline-block",
+                      }}
+                      className="d-flex mx-auto"
                       src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-homepage-jumbo.png"
                       alt="ARC TravelConnect"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -39,8 +61,11 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-                <img
-                  className="img-fluid"
+                <Image
+                  width={622}
+                  height={68}
+                  style={{ height: "auto", maxWidth: "100%" }}
+                  className="img-fluid d-flex mx-auto"
                   src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-current-episode.png"
                   alt="ARC TravelConnect"
                 />
@@ -52,13 +77,15 @@ export default function Home() {
                           class="usa-embed-container mb-0"
                           style={{ border: "1px solid #808080" }}
                         >
-                          <iframe
-                            width="700px"
+                          <Iframe
+                            width="700"
+                            styles={{ height: "100%", maxWidth: "100%" }}
+                            overflow="false"
                             src="https://www.youtube.com/embed/ylBV3q8-5IM"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
+                            allowFullScreen
+                          ></Iframe>
                         </div>
                       </div>
                       <div className="col-lg-6">

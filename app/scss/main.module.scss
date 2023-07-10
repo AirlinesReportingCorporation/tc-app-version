@@ -20,6 +20,29 @@
 .tc2021-main-v .tc2021-nav {
   max-width: 1400px;
 }
+
+.tc2021-main {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+// .tc2021-header-container {
+//   padding: 0px 0px 240px;
+//   .container {
+//     border-top: 1px solid #808080;
+//   }
+// }
+
+// .tc22-episode-box {
+//   background: #000;
+//   border: 1px solid #1fdcc8;
+//   border-top: 20px solid #1fdcc8;
+//   padding: 30px;
+//   margin: 30px;
+//   text-align: left;
+// }
+
 .tc-22-white {
   background: #fff !important;
 }
@@ -144,11 +167,6 @@ footer .rtf .footer-rtf-links {
 
   .tc2021-nav a {
     display: block;
-  }
-
-  .tc2021-header-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 
   .tc2021-assistance-1,
