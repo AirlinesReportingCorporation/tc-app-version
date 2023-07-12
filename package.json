@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "arccorp-vars": "^0.0.4",
+    "arccorp-vars": "^0.2.5",
     "bootstrap": "^5.3.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.3",

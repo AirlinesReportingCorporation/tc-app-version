@@ -3,7 +3,7 @@ const nextConfig = {}
 
 module.exports = nextConfig
 
-const path = require('path');
+const path = require('path'); //for sass/scss integration
  
 module.exports = {
   sassOptions: {

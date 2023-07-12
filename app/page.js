@@ -1,17 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import main from "./scss/main.module.scss";
+import "./scss/main.module.scss";
 import Iframe from "react-iframe";
-import "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main className={main} style={{ backgroundColor: "#000" }}>
+    <main style={{ backgroundColor: "#000" }}>
       <div style={{ width: "100%" }}>
-        <div
-          className="tc2021-header-container"
-          style={main.tc2021HeaderContainer}
-        >
+        <div className={styles.tc2021HeaderContainer}>
           <div className="container" style={{ borderTop: "none" }}>
             <div className="row">
               <Link
@@ -69,34 +66,34 @@ export default function Home() {
                   src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-current-episode.png"
                   alt="ARC TravelConnect"
                 />
-                <div className="tc22-episode-box">
+                <div className={styles.tc22EpisodeBox}>
                   <div className="container">
                     <div className="row align-items-center">
                       <div className="col-lg-6">
                         <div
-                          class="usa-embed-container mb-0"
+                          class={"usa-embed-container mb-0"}
                           style={{ border: "1px solid #808080" }}
                         >
-                          <Iframe
-                            width="700"
-                            styles={{ height: "100%", maxWidth: "100%" }}
-                            overflow="false"
+                          <iframe
+                            width="560"
+                            height="315"
                             src="https://www.youtube.com/embed/ylBV3q8-5IM"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></Iframe>
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                          ></iframe>
                         </div>
                       </div>
                       <div className="col-lg-6">
-                        <div className="tc22-current-copy">
-                          <h2 className="text-white">
+                        <div className={styles.tc22CurrentCopy}>
+                          <h2 className="type-color-white">
                             ARC TravelConnect Virtual Series: Growth and
                             Innovation at the Denver Airport
                           </h2>
                           <a
                             href="/episodes/growth-and-innovation-at-the-denver-international-airport/"
-                            className="tc22-watchnow"
+                            className={styles.tc22WatchNow}
                           >
                             Watch Now{" "}
                             <i

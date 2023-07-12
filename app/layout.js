@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import main from "./scss/main.module.scss";
 import NavBar from "./components/tc-nav-bar";
 

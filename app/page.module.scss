@@ -1,4 +1,4 @@
-
+@use "~arccorp-vars/src/scss/partials/colors";
 .main {
   display: flex;
   flex-direction: column;
@@ -8,6 +8,45 @@
   min-height: 100vh;
   background-color: #2a2b2c;
 }
+
+.tc2021HeaderContainer {
+  padding: 0px 0px 240px;
+  .container {
+    border-top: 1px solid #808080;
+  }
+}
+
+.tc22EpisodeBox {
+  background: #000000;
+  border: 1px solid #1fdcc8;
+  border-top: 20px solid #1fdcc8;
+  padding: 30px;
+  margin: 30px;
+  text-align: left;
+
+  h2 {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif !important;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 1;
+    font-size: 2.75rem;
+    letter-spacing: 0 !important;
+    margin-bottom: 1rem;
+  }
+  
+}
+.tc22WatchNow {
+  font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  color: colors.$beacon;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.tc22CurrentCopy {
+  padding: 0 60px;
+
+}
+
 
 .description {
   display: inherit;
@@ -109,6 +148,8 @@
 .logo {
   position: relative;
 }
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

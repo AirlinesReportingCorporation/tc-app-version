@@ -1,6 +1,5 @@
 //import all arccorp vars
-@use "~arccorp-vars/src/scss/main";
-
+@use "~arccorp-vars/src/scss/partials/colors";
 @import "./partials/base.module.scss";
 @import "./partials/episodes.module.scss";
 @import "./partials/episode.module.scss";
@@ -27,29 +26,11 @@
   }
 }
 
-// .tc2021-header-container {
-//   padding: 0px 0px 240px;
-//   .container {
-//     border-top: 1px solid #808080;
-//   }
-// }
-
-// .tc22-episode-box {
-//   background: #000;
-//   border: 1px solid #1fdcc8;
-//   border-top: 20px solid #1fdcc8;
-//   padding: 30px;
-//   margin: 30px;
-//   text-align: left;
-// }
-
 .tc-22-white {
   background: #fff !important;
 }
 
-.tc22-current-copy {
-  padding: 0 60px;
-}
+ok
 
 .tc22-reachout {
   text-transform: uppercase;
@@ -64,30 +45,7 @@
   margin-left: 1rem;
 }
 
-.tc22-episode-box {
-  background: #000000;
-  border: 1px solid #1fdcc8;
-  border-top: 20px solid #1fdcc8;
-  padding: 30px;
-  margin: 30px;
-  text-align: left;
 
-  h2 {
-    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif !important;
-    font-weight: 600;
-    text-transform: none;
-    line-height: 1;
-    font-size: 2.75rem;
-    letter-spacing: 0 !important;
-    margin-bottom: 1rem;
-  }
-  a.tc22-watchnow {
-    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
-    color: #ffa619;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-}
 
 a.tc22-link,
 a.tc22-link:hover {

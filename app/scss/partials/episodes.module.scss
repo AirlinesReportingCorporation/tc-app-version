@@ -1,4 +1,4 @@
-
+@use "~arccorp-vars/src/scss/partials/colors";
 
 .episode-num {
   color: #ffffff;
@@ -153,5 +153,5 @@
 }
 
 .tc-22-white {
-  background: main.$white;
+  background: colors.$white;
 }

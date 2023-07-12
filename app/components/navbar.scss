@@ -1,18 +1,18 @@
-
+@use "~arccorp-vars/src/scss/partials/colors";
 
 .tc2021-main-v .tc2021-header {
-  background: #000;
+  background: colors.$black;
 }
 
 .tc2021-nav {
   max-width: 1400px;
   margin: 2rem auto;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid colors.$black;
 }
 
 .tc2021-nav .arc-logo a {
   background: #fff;
-  color: #2a2b2c !important;
+  color: colors.$tarmac !important;
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -43,13 +43,14 @@
 
 .tc2021-nav a {
   padding: 10px;
+  letter-spacing: 3px;
  }
 .tc2021-nav a.tc-nav-link {
   position: relative;
   display: inline-block;
   text-align: center;
   font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: colors.$white;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,13 +58,13 @@
 }
 
 .tc2021-nav a:hover {
-  color: #fff;
+  color: colors.$white;
 }
 .tc2021-nav a.tc-nav-link:hover:after {
   position: absolute;
   height: 4px;
   content: "";
-  background: #ffa619;
+  background: colors.$beacon;
   top: 120%;
   width: 100%;
   left: 0;
