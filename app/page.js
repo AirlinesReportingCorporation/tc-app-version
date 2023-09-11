@@ -20,7 +20,6 @@ export default function Home() {
                   height={0}
                   style={{
                     maxWidth: "100%",
-                    width: "100%",
                     height: "auto",
                     display: "inline-block",
                     margin: "auto",
@@ -57,7 +56,7 @@ export default function Home() {
         <div className="">
           <div className="container">
             <div className="row">
-              <div className="col-lg-12 text-center">
+              <div className="col-lg-12">
                 <Image
                   width={622}
                   height={68}
@@ -75,8 +74,7 @@ export default function Home() {
                           style={{ border: "1px solid #808080" }}
                         >
                           <iframe
-                            width="560"
-                            height="315"
+                            width="700"
                             src="https://www.youtube.com/embed/ylBV3q8-5IM"
                             title="YouTube video player"
                             frameborder="0"
@@ -119,17 +117,17 @@ export default function Home() {
             paddingTop: "180px",
           }}
         >
-          <div className="tc2021-virtual text-center">
+          <div className={styles.tc2021Virtual + " text-center"}>
             <div className="row">
               <div className="col-lg-12">
-                <div className="tc2021-virtual-title">
+                <div className={styles.tc2021VirtualTitle + " type-color-white"}>
                   What You'll Learn In This Series
                 </div>
               </div>
             </div>
             <div className="row align-content-start text-left">
               <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
+                <div className={styles.tc2021VirtualInner}>
                   <img
                     style={{ width: "100%" }}
                     className="pb-0 img-fluid"
@@ -144,7 +142,7 @@ export default function Home() {
                   </p>
                   <a
                     href="/episodes?filter=data-and-trends"
-                    className="tc22-link bold"
+                    className={styles.tc22Link}
                   >
                     Watch Episodes On <br />
                     This Topic{" "}
@@ -156,7 +154,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
+                <div className={styles.tc2021VirtualInner}>
                   <img
                     style={{ width: "100%" }}
                     className="pb-0 img-fluid"
@@ -170,7 +168,7 @@ export default function Home() {
                     retailing experience, with focus on distribtion, payments
                     and technology.
                   </p>
-                  <a href="/episodes?retailing" className="tc22-link bold">
+                  <a href="/episodes?retailing" className={styles.tc22Link}>
                     Watch Episodes On <br />
                     This Topic{" "}
                     <i
@@ -181,7 +179,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <div className="tc2021-virtual-inner">
+                <div className={styles.tc2021VirtualInner}>
                   <img
                     className="pb-0 img-fluid"
                     style={{ width: "100%" }}
@@ -195,7 +193,7 @@ export default function Home() {
                   </p>
                   <a
                     href="/episodes?filter=innovation"
-                    className="tc22-link bold"
+                    className={styles.tc22Link}
                   >
                     Watch Episodes On <br />
                     This Topic{" "}
@@ -210,7 +208,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tc22-stats">
+        <div className={styles.tc22Stats}>
           <div className="container">
             <div className="col-lg-12">
               <img
@@ -222,12 +220,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tc22-about">
+        <div className={styles.tc22About}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div className="tc22-about-box">
-                  <div class="tc2021-virtual-title">About This Series</div>
+                <div className={styles.tc22AboutBox}>
+                  <div class={styles.tc2021VirtualTitle}>About This Series</div>
                   <img
                     className="img-fluid"
                     src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-goal.png"
@@ -248,20 +246,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tc2021-virtual-info">
-          <div className="tc2021-questions">
+        <div className={styles.tc2021VirtualInfo}>
+          <div className={styles.tc2021Questions}>
             <div className="container">
               <div className="row">
-                <div className="col-lg-10 offset-lg-1 text-center">
+                <div className="col-lg-10 offset-lg-1" style={{textAlign:"center"}}>
                   <img
                     src="https://arctravelconnect.com/globalassets/Home2/2021/HAVE-ANY-QUESTIONS.png"
                     alt=""
                     style={{ maxwidth: "650px" }}
                   />
                   <div className="mt-3">
-                    <span className="tc22-reachout">Please Reach Out To:</span>
+                    <span className={styles.tc22Reachout}>Please Reach Out To:</span>
                     <a
-                      className="tc22-email-link"
+                      className={styles.tc22EmailLink}
                       href="mailto:TravelConnectTeam@arccorp.com"
                     >
                       TravelConnectTeam@arccorp.com
@@ -273,7 +271,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tc2021-omni">
+        <div className={styles.tc2021Omni}>
           <div className="container">
             <div className="row">
               <div
@@ -303,7 +301,7 @@ export default function Home() {
                   <a
                     href="https://www2.arccorp.com/about-us/arc-omnichannel-retailing/"
                     target="_blank"
-                    className="ctaBtn"
+                    className={styles.ctaBtn}
                   >
                     Learn More
                   </a>
@@ -313,18 +311,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="social" className="tc2021-social tcContainer">
+        <div id="social" className={styles.tc2021Social + " tcContainer"}>
           <div className="tcSocial">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <div className="hashtag">#TravelConnect</div>
+                  <div className={styles.hashtag}>#TravelConnect</div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-12">
                   <div
-                    className="social-subtitle"
+                    className={styles.socialSubtitle}
                     style={{ marginTop: "30px" }}
                   >
                     <img
@@ -340,7 +338,7 @@ export default function Home() {
                     href="https://www.facebook.com/ARCtalk"
                     title="facebook"
                     target="_blank"
-                    className="icon-social icon-facebook"
+                    className={styles.iconSocial + " icon-facebook"}
                   ></a>
                 </div>
                 <div className="col">
@@ -348,21 +346,21 @@ export default function Home() {
                     href="https://twitter.com/ARCtalk"
                     title="twitter"
                     target="_blank"
-                    className="icon-social icon-twitter"
+                    className={styles.iconSocial + " icon-twitter"}
                   ></a>
                 </div>
                 <div className="col">
                   <a
                     href="https://www.linkedin.com/company/6509/"
                     target="_blank"
-                    className="icon-social icon-linkedin"
+                    className={styles.iconSocial + " icon-linkedin"}
                   ></a>
                 </div>
                 <div className="col">
                   <a
                     href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw/"
                     target="_blank"
-                    className="icon-social icon-youtube"
+                    className={styles.iconSocial + " icon-youtube"}
                   ></a>
                 </div>
               </div>
@@ -370,20 +368,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tc2021-assistance">
-          <div className="tc2021-assistance-inner">
+        <div className={styles.tc2021Assistance}>
+          <div className={styles.tc2021AssistanceInner}>
             <div className="container">
               <div className="row ">
                 <div className="col-md-4">
-                  <div className="tc2021-assistance-1">
+                  <div className={styles.tc2021Assistance1}>
                     Need <br />
                     Further <br />
                     Assistance?
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="tc2021-assistance-2">
-                    <div className="tc2021-h2">General Inquiries</div>
+                  <div className={styles.tc2021Assistance2}>
+                    <div className={styles.tc2021H2}>General Inquiries</div>
                     GENERAL INQUIRIES
                     <strong>TravelConnect Team</strong>
                     <br />
@@ -393,8 +391,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="tc2021-assistance-2">
-                    <div className="tc2021-h2">Press</div>
+                  <div className={styles.tc2021Assistance2}>
+                    <div className={styles.tc2021H2}>Press</div>
                     <strong>Randy Spoon</strong>
                     <br />
                     (703) 816-5119

@@ -20,6 +20,13 @@ body h6,
   font-weight: 300;
 }
 
+.container {
+  max-width: 1400px !important;
+  .row {
+    max-width: 100% !important;
+  }
+}
+
 .usa-embed-container {
   position: relative;
   padding-bottom: 56.25%;
