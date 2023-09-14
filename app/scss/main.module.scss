@@ -1,8 +1,8 @@
 //import all arccorp vars
 @use "~arccorp-vars/src/scss/partials/colors";
+
 @import "./partials/base.module.scss";
-@import "./partials/episodes.module.scss";
-@import "./partials/episode.module.scss";
+@import "../components/navbar.scss";
 
 // page styles
 
@@ -16,13 +16,18 @@
 //     }
 //   }
 // }
+
 .tc2021-main-v .tc2021-nav {
   max-width: 1400px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 .tc2021-main {
   .container {
     max-width: 1400px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -30,9 +35,7 @@
   background: #fff !important;
 }
 
-ok
-
-.tc22-reachout {
+ok .tc22-reachout {
   text-transform: uppercase;
   font-size: 2.5rem;
   font-family: "TheHand-Extra-Black", TheHand-Extra-Black, Arial, Helvetica,
@@ -44,8 +47,6 @@ ok
   vertical-align: text-bottom;
   margin-left: 1rem;
 }
-
-
 
 a.tc22-link,
 a.tc22-link:hover {

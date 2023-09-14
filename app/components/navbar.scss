@@ -1,13 +1,24 @@
 @use "~arccorp-vars/src/scss/partials/colors";
 
+
 .tc2021-main-v .tc2021-header {
   background: colors.$black;
+
+  .container {
+    max-width: 1400px !important;
+    padding-left: 15px !important;
+    padding-right: 20px !important;
+  }
 }
 
 .tc2021-nav {
   max-width: 1400px;
   margin: 2rem auto;
   border-bottom: 1px solid colors.$black;
+
+  .arc-logo {
+    margin-left: auto;
+  }
 }
 
 .tc2021-nav .arc-logo a {

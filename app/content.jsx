@@ -42,7 +42,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "93hQquGY4fs",
-    link: "/episodes/2020-outlook-travel-recovery-trends-to-watch/",
+    link: "2020-outlook-travel-recovery-trends-to-watch/",
     time: "Available Now",
     date: "June 4, 2020",
     cta: "View Details",
@@ -72,7 +72,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "lEy5UakXXmI",
-    link: "/episodes/How-Travel-System-are-Adapting-to-COVID-19/",
+    link: "How-Travel-System-are-Adapting-to-COVID-19/",
     time: "Available Now",
     date: "July 27, 2020",
     cta: "View Details",
@@ -98,7 +98,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "1mam8X5N_l0",
-    link: "/episodes/Whats-Next-for-Business-Travel/",
+    link: "Whats-Next-for-Business-Travel/",
     time: "Available Now",
     date: "August 19, 2020",
     cta: "View Details",
@@ -124,7 +124,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "laZMBVj9ZbM",
-    link: "/episodes/Whats-Really-on-the-Dark-Web/",
+    link: "Whats-Really-on-the-Dark-Web/",
     time: "Available Now",
     date: "September 17, 2020",
     cta: "View Details",
@@ -146,7 +146,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "oN1LocEIPVg",
-    link: "/episodes/Travel-Recovery-Trends-to-Watch-in-Fall-2020/",
+    link: "Travel-Recovery-Trends-to-Watch-in-Fall-2020/",
     time: "Available Now",
     date: "October 14, 2020",
     cta: "View Details",
@@ -170,7 +170,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "uE9RtodEpSc",
-    link: "/episodes/Enhancing-the-Traveler-Experience-in-Every-Channel/",
+    link: "Enhancing-the-Traveler-Experience-in-Every-Channel/",
     time: "Available Now",
     date: "Nov 18, 2020",
     cta: "View Details",
@@ -205,7 +205,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "fkU55zhJDXk",
-    link: "/episodes/A-Fireside-Chat-with-Mike-Premo-and-Dave-Hilfman/",
+    link: "A-Fireside-Chat-with-Mike-Premo-and-Dave-Hilfman/",
     time: "3:00 p.m. EST",
     date: "Dec 15, 2020",
     cta: "View Details",
@@ -243,7 +243,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "rSen3jbg_Z4",
-    link: "/episodes/exploring-the-future-of-travel-with-g-adventures/",
+    link: "exploring-the-future-of-travel-with-g-adventures/",
     time: "Available Now",
     date: "Feb 18, 2021",
     cta: "View Details",
@@ -277,7 +277,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "XdyDmdQnLvo",
-    link: "/episodes/Assessing-the-Travel-Industry-with-A4A/",
+    link: "Assessing-the-Travel-Industry-with-A4A/",
     time: "Available Now",
     date: "Apr 28, 2021",
     cta: "View Details",
@@ -306,7 +306,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "f5lhm-ur0p8",
-    link: "/episodes/southwest-business-talks-distribution-industry-recovery/",
+    link: "southwest-business-talks-distribution-industry-recovery/",
     time: "Available Now",
     date: "May 13, 2021",
     cta: "View Details",
@@ -339,7 +339,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "BmL6X6Akdzw",
-    link: "/episodes/distribution-recovery-collaboration-american-airlines/",
+    link: "distribution-recovery-collaboration-american-airlines/",
     time: "Available Now",
     date: "June 29, 2021",
     cta: "View Details",
@@ -370,7 +370,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "EtC9bJPwqV8",
-    link: "/episodes/hopper-on-value-of-fintech-in-travel/",
+    link: "hopper-on-value-of-fintech-in-travel/",
     time: "Available Now",
     date: "July 22, 2021",
     cta: "View Details",
@@ -410,7 +410,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "T4f-Lz3tuls",
-    link: "/episodes/the-realities-of-omnichannel-retailing/",
+    link: "the-realities-of-omnichannel-retailing/",
     time: "Available Now",
     date: "October 20, 2021",
     cta: "View Details",
@@ -447,7 +447,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "O_xWge5uN5A",
-    link: "/episodes/using-consumer-spending-to-track-travel-trends/",
+    link: "using-consumer-spending-to-track-travel-trends/",
     time: "Available Now",
     date: "February 24, 2022",
     cta: "View Details",
@@ -475,7 +475,7 @@ export const episodes = [
       </>
     ),
     embedUrl: "ylBV3q8-5IM",
-    link: "/episodes/growth-and-innovation-at-the-denver-airport/",
+    link: "growth-and-innovation-at-the-denver-airport/",
     time: "Available Now",
     date: "June 23, 2022",
     cta: "View Details",

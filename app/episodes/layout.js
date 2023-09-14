@@ -1,4 +1,4 @@
-import "../scss/main.module.scss";
+import styles from "./episodes.module.scss";
 
 export const metadata = {
   title: "Episodes",
@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function Layout({ children }) {
   return (
-        <div className="tc2021-main tc2021-main-v tc-22-white">
-          <div>{children}</div>
+        <div className={styles["tc2020-episode-container"]}>
+        {children}
         </div>
   );
 }

@@ -1,4 +1,5 @@
 import "./globals.scss";
+
 import main from "./scss/main.module.scss";
 import NavBar from "./components/tc-nav-bar";
 import TCFooter from "./components/tc-footer";
