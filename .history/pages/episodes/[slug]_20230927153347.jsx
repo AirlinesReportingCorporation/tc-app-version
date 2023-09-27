@@ -28,11 +28,7 @@ export default function EpisodePage({ episode }) {
             />
             {episode.episode}
           </div>
-          <div className={styles["tc2020-article-title"]}>{episode.title.map(line => {
-            return (
-              <span>{line}<br/></span>
-            )
-          })}</div>
+          <div className={styles["tc2020-article-title"]}>{episode.title}</div>
         </div>
       </div>
       <div className={main["tc-22-white"]}>

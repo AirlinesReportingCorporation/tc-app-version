@@ -7,7 +7,6 @@ import main from "../../styles/main.module.scss";
 
 export default function EpisodePage({ episode }) {
   episode = JSON.parse(episode);
-  console.log(episode.title)
 
   // render episode here
   return (
@@ -28,11 +27,7 @@ export default function EpisodePage({ episode }) {
             />
             {episode.episode}
           </div>
-          <div className={styles["tc2020-article-title"]}>{episode.title.map(line => {
-            return (
-              <span>{line}<br/></span>
-            )
-          })}</div>
+          <div className={styles["tc2020-article-title"]}>{episode.title}</div>
         </div>
       </div>
       <div className={main["tc-22-white"]}>

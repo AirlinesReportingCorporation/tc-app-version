@@ -30,7 +30,7 @@ export default function EpisodePage({ episode }) {
           </div>
           <div className={styles["tc2020-article-title"]}>{episode.title.map(line => {
             return (
-              <span>{line}<br/></span>
+              <span>{line[0]}<br/>{line[1]}</span>
             )
           })}</div>
         </div>
