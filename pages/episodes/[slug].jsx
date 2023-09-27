@@ -1,29 +1,27 @@
-import { useRouter } from "next/router";
 import Image from "next/image";
-import { getEpisodeBySlug } from "../../content";
+import { episodes } from "../../content";
 import { Fragment } from "react";
 import styles from "../../styles/partials/episode.module.scss";
 import Layout from "@/components/layout";
 import main from "../../styles/main.module.scss";
 
-export default function EpisodePage() {
-  //send request to json with the slug ==> router.query.slug
-  const router = useRouter();
-  const slug = router.query.slug;
-  const episode = getEpisodeBySlug(slug);
-
-  if (!episode) {
-    //return to the main episodes page
-    console.log("no episode, redirect");
-  }
+export default function EpisodePage({ episode }) {
+  episode = JSON.parse(episode)
+  console.log(episode)
+  console.log(episode.episode)
+  console.log(episode.name)
+  console.log(episode.description)
+  console.log(episode.link)
+  console.log(episode.tags)
+  console.log(episode.embedUrl)
 
   // render episode here
   return (
     <Fragment>
       <div className={styles["tc2020-article-top"]}>
-        <div class={styles["tc2020-article-container"]}>
+        <div className={styles["tc2020-article-container"]}>
           <div
-            class={
+            className={
               styles[`${"tc2020-article-episode2"}`] +
               " d-flex align-items-center justify-content-center"
             }
@@ -36,21 +34,21 @@ export default function EpisodePage() {
             />
             {episode.episode}
           </div>
-          <div class={styles["tc2020-article-title"]}>{episode.title}</div>
+          <div className={styles["tc2020-article-title"]}>{episode.title}</div>
         </div>
       </div>
       <div className={main["tc-22-white"]}>
-        <div class={styles["tc2020-article-conent"]}>
+        <div className={styles["tc2020-article-conent"]}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div class={styles["usa-embed-container"]}>
+                <div className={styles["usa-embed-container"]}>
                   <iframe
                     width="700px"
                     src={"https://www.youtube.com/embed/" + episode.embedUrl}
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
               </div>
@@ -141,3 +139,21 @@ EpisodePage.getLayout = (page) => {
     </div>
   );
 };
+
+export async function getStaticProps({ params }) {
+  const episodeList = episodes.filter(episode => episode.link.toString() === params.slug);
+  return {
+    props: {
+      episode: JSON.stringify(episodeList[0])
+    }
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = episodes.map((episode) => ({
+    params: { slug: episode.link },
+  }));
+  console.log(paths);
+
+  return { paths, fallback: false };
+}

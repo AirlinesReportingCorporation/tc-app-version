@@ -5,11 +5,11 @@ import { episodes } from "../../content";
 import styles from "../../styles/partials/episodes.module.scss";
 import Layout from "../../components/layout";
 
-export default function Episodes() {
+export default function Episodes({ episodesList }) {
   let [filter, setFilter] = useState("");
   const router = useRouter();
 
-  console.log(episodes)
+  episodesList = JSON.parse(episodesList)
 
   useEffect(() => {
     let urlSearchParams = new URLSearchParams(window.location.search);
@@ -48,7 +48,7 @@ export default function Episodes() {
   }
 
   return (
-    <>
+    <div className={styles["tc2020-episode-container"]}>
       <div className={styles["tc2020-episode-title"]}>
         <img
           src="https://arctravelconnect.com/globalassets/Home2/2022/tc22-episodes.png"
@@ -84,7 +84,7 @@ export default function Episodes() {
 
       <div className={styles["tc2020-episode-list"]}>
         <div className="row">
-          {episodes
+          {episodesList
             .slice(0)
             .reverse()
             .map((episode, i) => {
@@ -116,10 +116,19 @@ export default function Episodes() {
             })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 Episodes.getLayout = (page) => {
   return <Layout>{page}</Layout>
+}
+
+export async function getStaticProps() {
+
+  return {
+    props: {
+      episodesList: JSON.stringify(episodes)
+    },
+  };
 }

@@ -30,22 +30,22 @@ export default function NavBar() {
                   <div className="d-flex justify-content-center">
                     <Link
                       target="_blank"
-                      className={styles["tc2021-underline con-social icon-facebook"]}
+                      className={styles["tc2021-underline"] + " icon-social icon-facebook"}
                       href="https://www.facebook.com/ARCtalk"
                     ></Link>
                     <Link
                       target="_blank"
-                      className={styles["tc2021-underline icon-social icon-twitter"]}
+                      className={styles["tc2021-underline"] + " icon-social icon-twitter"}
                       href="https://twitter.com/ARCtalk"
                     ></Link>
                     <Link
                       target="_blank"
-                      className={styles["tc2021-underline icon-social icon-linkedin"]}
+                      className={styles["tc2021-underline"] + " icon-social icon-linkedin"}
                       href="https://www.linkedin.com/company/6509/"
                     ></Link>
                     <Link
                       target="_blank"
-                      className={styles["tc2021-underline icon-social icon-youtube"]}
+                      className={styles["tc2021-underline"] + " icon-social icon-youtube"}
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw/"
                     ></Link>
                   </div>
