@@ -6,14 +6,7 @@ import Layout from "@/components/layout";
 import main from "../../styles/main.module.scss";
 
 export default function EpisodePage({ episode }) {
-  episode = JSON.parse(episode)
-  console.log(episode)
-  console.log(episode.episode)
-  console.log(episode.name)
-  console.log(episode.description)
-  console.log(episode.link)
-  console.log(episode.tags)
-  console.log(episode.embedUrl)
+  episode = JSON.parse(episode);
 
   // render episode here
   return (
@@ -46,7 +39,7 @@ export default function EpisodePage({ episode }) {
                   <iframe
                     width="700px"
                     src={"https://www.youtube.com/embed/" + episode.embedUrl}
-                    frameBorder="0"
+                    frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
@@ -60,7 +53,9 @@ export default function EpisodePage({ episode }) {
                   style={{ marginBottom: "60px" }}
                   alt=""
                 />
-                <p>{episode.description}</p>
+                {episode.description.map((p) => {
+                  return <p>{p}</p>;
+                })}
               </div>
               <div className="col-lg-4">
                 <div className={styles["tc22-speaker-titles"]}>
@@ -141,11 +136,13 @@ EpisodePage.getLayout = (page) => {
 };
 
 export async function getStaticProps({ params }) {
-  const episodeList = episodes.filter(episode => episode.link.toString() === params.slug);
+  const episodeList = episodes.filter(
+    (episode) => episode.link.toString() === params.slug
+  );
   return {
     props: {
-      episode: JSON.stringify(episodeList[0])
-    }
+      episode: JSON.stringify(episodeList[0]),
+    },
   };
 }
 
