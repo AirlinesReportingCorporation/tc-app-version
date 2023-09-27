@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { episodes } from "../../content";
 import { Fragment } from "react";
 import styles from "../../styles/partials/episode.module.scss";
@@ -7,7 +8,6 @@ import main from "../../styles/main.module.scss";
 
 export default function EpisodePage({ episode }) {
   episode = JSON.parse(episode);
-  console.log(episode.title)
 
   // render episode here
   return (
@@ -71,15 +71,16 @@ export default function EpisodePage({ episode }) {
                 </div>
                 <div className={styles["tc22-episode-detail"]}>
                   {episode.tags.split(",").map((tag, i) => {
+                    let filter = tag.split(' ').join('-').toLowerCase();
                     return (
                       <div>
-                        <a href="">
+                        <Link href={"/episodes?filter=" + filter}>
                           {tag}
                           <i
                             className="fa fa-caret-right"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                         <br />
                         <br />
                       </div>
