@@ -90,8 +90,8 @@ function Home() {
                             ARC TravelConnect Virtual Series: Growth and
                             Innovation at the Denver Airport
                           </h2>
-                          <a
-                            href="/episodes/growth-and-innovation-at-the-denver-international-airport/"
+                          <Link
+                            href="/episodes/growth-and-innovation-at-the-denver-airport/"
                             className={styles.tc22WatchNow}
                           >
                             Watch Now{" "}
@@ -99,7 +99,7 @@ function Home() {
                               className="fa fa-caret-right ml-2"
                               aria-hidden="true"
                             ></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -143,7 +143,7 @@ function Home() {
                     evolving fraud landscape, what consumer spending can tell us
                     about the future, and more.
                   </p>
-                  <a
+                  <Link
                     href="/episodes?filter=data-and-trends"
                     className={styles.tc22Link}
                   >
@@ -153,7 +153,7 @@ function Home() {
                       className="fa fa-caret-right ml-2"
                       aria-hidden="true"
                     ></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -194,7 +194,7 @@ function Home() {
                     ideas. We discuss work culture, the future of travel, and
                     other innovative topics with industry thought leaders.
                   </p>
-                  <a
+                  <Link
                     href="/episodes?filter=innovation"
                     className={styles.tc22Link}
                   >
@@ -204,7 +204,7 @@ function Home() {
                       className="fa fa-caret-right ml-2"
                       aria-hidden="true"
                     ></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
