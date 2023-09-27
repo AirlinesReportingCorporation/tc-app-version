@@ -171,14 +171,14 @@ function Home() {
                     retailing experience, with focus on distribtion, payments
                     and technology.
                   </p>
-                  <a href="/episodes?retailing" className={styles.tc22Link}>
+                  <Link href="/episodes?retailing" className={styles.tc22Link}>
                     Watch Episodes On <br />
                     This Topic{" "}
                     <i
                       className="fa fa-caret-right ml-2"
                       aria-hidden="true"
                     ></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4">
