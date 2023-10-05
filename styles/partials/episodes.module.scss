@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.tc2020-episode-list {
+  max-width: 1370px;
+}
+
 .tc2020-episode-title {
   color: #000000;
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
@@ -23,21 +27,21 @@
 
 .episode-num {
   color: #ffffff;
-    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
-    background: #1fdcc8;
-    text-align: center;
-    flex-direction: column;
-    border-radius: 100%;
-    max-height: 122px;
-    max-width: 122px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    top: -65px;
-    z-index: 2;
-    position: absolute;
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  background: #1fdcc8;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 100%;
+  max-height: 122px;
+  max-width: 122px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  top: -65px;
+  z-index: 2;
+  position: absolute;
 }
 
 .episode-meta {
@@ -65,7 +69,7 @@
 select.episode-filter {
   max-width: 425px;
   max-height: 42px;
-  margin-left: 10px !important;;
+  margin-left: 10px !important;
   border: 1px solid #bcbec0;
   width: 100%;
   height: 2.375rem;
@@ -75,7 +79,7 @@ select.episode-filter {
   font-family: inherit;
   line-height: normal;
   color: #6d6e71;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -120,15 +124,21 @@ select.episode-filter {
 }
 
 .episode-button a.ctaBtn {
+  font-family: "SourceSansPro-Bold";
   background: #fd9d26;
+  font-size: 0.875rem;
+  text-transform: uppercase;
   border-radius: 0;
   border-color: #ffffff;
   margin: 2px;
   border-width: 1px;
   margin-top: 0px;
+  padding: 1rem 1.875rem;
+  display: inline-block;
   min-height: 3.3125rem;
   line-height: normal;
-  padding: 1rem 1.875rem;
+  outline: 0;
+  width: 148px;
 }
 .episode-button a.ctaBtn:hover {
   background: #fd9c26de;
@@ -164,8 +174,6 @@ select.episode-filter {
   position: relative;
 }
 
-
-
 .tc2020-episode-more {
   color: #000000;
   text-transform: uppercase;
@@ -178,5 +186,3 @@ select.episode-filter {
   max-width: 1170px;
   margin: 0 auto;
 }
-
-
