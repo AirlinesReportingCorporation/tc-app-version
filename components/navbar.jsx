@@ -8,7 +8,7 @@ export default function NavBar() {
       <div className={styles["tc2021-header"]}>
         <div className="container">
           <div className="row">
-            <div className={styles["col-md-12"]}>
+            <div className="col-md-12">
               <div className={styles["tc2021-nav"] + " d-lg-flex d-md-flex flex-row align-items-center"}>
                 <Link className={styles["tc2021-underline"] + " d-block"} href="/">
                   <Image

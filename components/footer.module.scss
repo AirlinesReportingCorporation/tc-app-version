@@ -38,6 +38,7 @@
     max-width: 100%;
     vertical-align: middle;
     border: 0;
+    display: none;
   }
 
   .footer-rtf-links {
@@ -48,5 +49,11 @@
         margin-right: 15px;
 
       }
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .footer-rtf-links {
+    display: inherit !important;
   }
 }

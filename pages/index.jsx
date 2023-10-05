@@ -54,7 +54,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="">
+        <div className={styles.currentEpisode}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

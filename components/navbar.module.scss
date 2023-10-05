@@ -15,6 +15,7 @@
   max-width: 1400px;
   margin: 2rem auto;
   border-bottom: 1px solid colors.$black;
+  display: flex;
 
   .arc-logo {
     margin-left: auto;
@@ -98,5 +99,14 @@
       max-width: 300px;
       margin: 0 auto;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tc2021-nav {
+    flex-direction: column !important;
+  }
+  .arc-logo {
+    margin: auto;
   }
 }
