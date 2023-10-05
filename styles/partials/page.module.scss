@@ -1,4 +1,4 @@
-@use "~arccorp-vars/src/scss/partials/colors";
+$yellow : #ffa61d;
 .main {
   display: flex;
   flex-direction: column;
@@ -43,11 +43,15 @@
 
   .tc22CurrentCopy {
     padding: 0 60px;
+    
+    h2 {
+      line-height: 1;
+    }
   }
 }
 .tc22WatchNow {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
-  color: colors.$beacon;
+  color: #ffa61d;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -75,7 +79,8 @@
       margin: 0 auto;
     }
     p {
-      color: colors.$white;
+      text-align: left;
+      color: white;
       font-size: 20px !important;
       margin-top: 60px;
       font-family: Arial, Helvetica, sans-serif;
@@ -87,11 +92,14 @@
     }
 
     .tc22Link {
-      color: colors.$beacon;
+      width: 100%;
+      text-align: left;
+      color: $yellow;
       font-weight: 400;
       font-size: 20px;
       text-transform: uppercase;
       font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      display: block;
     }
   }
 }

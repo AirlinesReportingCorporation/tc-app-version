@@ -33,7 +33,7 @@ function Home() {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <div className="tc2021-header-image">
+                <div className={main["tc2021-header-image"]}>
                   <Link href="/episodes">
                     <Image
                       width={600}
