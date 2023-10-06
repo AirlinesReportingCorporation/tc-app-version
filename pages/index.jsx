@@ -124,7 +124,7 @@ function Home() {
                 <div
                   className={styles.tc2021VirtualTitle + " type-color-white"}
                 >
-                  What You'll Learn In This Series
+                  What You&apos;ll Learn In This Series
                 </div>
               </div>
             </div>

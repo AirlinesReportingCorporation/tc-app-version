@@ -28,9 +28,9 @@ export default function EpisodePage({ episode }) {
             />
             {episode.episode}
           </div>
-          <div className={styles["tc2020-article-title"]}>{episode.title.map(line => {
+          <div className={styles["tc2020-article-title"]}>{episode.title.map((line, i) => {
             return (
-              <span>{line}<br/></span>
+              <span key={i}>{line}<br/></span>
             )
           })}</div>
         </div>
@@ -58,8 +58,8 @@ export default function EpisodePage({ episode }) {
                   style={{ marginBottom: "60px" }}
                   alt=""
                 />
-                {episode.description.map((p) => {
-                  return <p>{p}</p>;
+                {episode.description.map((p, i) => {
+                  return <p key={i}>{p}</p>;
                 })}
               </div>
               <div className="col-lg-4">
@@ -74,7 +74,7 @@ export default function EpisodePage({ episode }) {
                     let filter = tag.split(' ').join('-').toLowerCase();
                     return (
                       <div>
-                        <Link href={"/episodes?filter=" + filter}>
+                        <Link key={i} href={"/episodes?filter=" + filter}>
                           {tag}
                           <i
                             className="fa fa-caret-right"
@@ -106,7 +106,7 @@ export default function EpisodePage({ episode }) {
                 >
                   {episode.speakers.map((speaker, i) => {
                     return (
-                      <div className={styles["tc22-speaker-logo"]}>
+                      <div key={i} className={styles["tc22-speaker-logo"]}>
                         <img
                           style={{ maxWidth: "105px", width: "100%" }}
                           src={speaker}
