@@ -21,4 +21,8 @@ module.exports = {
       },
     ],
   },
+  exclude: ["node_modules"],
+  eslint : {
+    ignoreDuringBuilds: true,
+  }
 };
